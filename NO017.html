@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+	  @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+	  *{
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+	  }
+	  html,body{
+		  height: 100%;
+	  }
+	  body{
+		  background: url("loginBG_HRForget.jpg") no-repeat center center /cover;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  
+	  }
+	  .login{
+		  width: 600px;
+		  height: 500px;
+		  background-color: rgba(0,0,0,.5);
+		  border-radius: 10px;
+		  border:10px solid #FFF;
+		  box-shadow: 0 0 60px #000;
+		  backdrop-filter: blur(2px);
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+	  }
+	  .form{
+		  widows: 400px;
+		font-family:'Noto Sans TC',sans-serif;
+		color:#FFF;
+	  }
+	  .form h2{
+		  margin-bottom: 20px;
+		  padding-bottom: 20px;
+		  border-bottom: 1px solid #fff;
+	  }
+	  .form .group{
+		  margin-bottom: 20px;
+	  }
+	  .form label{
+		  line-height: 1.5;
+		  font-family:'Noto Sans TC',sans-serif;
+	  }
+	  .form input{
+		  width: 100%;
+		  border:1px solid #aaa;
+		  line-height: 3;
+		  border-radius: 5px;
+	  }
+	  .form .btn-group{
+		  font-size: 0px;
+		  margin-top: 50px;
+	  }
+	  .form .btn{
+		  font-size: 20px;
+		  border-radius: 5px;
+		  border: none;
+		  background-color: #6ab4fe;
+		  width: 190px;
+		  padding: 10px 0;
+		  color: #fff;
+		  font-family:'Noto Sans TC',sans-serif;
+	  }
+	.form .btn + .btn{
+		margin-left: 20px;
+
+	}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<form class="form">
+			<h2>會員登入</h2>
+			<div class="group">
+				<label for="user_id">帳號</label>
+				<input type="text" name="" id="user_id">
+			</div>
+			<div class="group">
+				<label for="user_id">密碼</label>
+				<input type="password" name="" id="user_password">
+			</div>
+			<div class="btn-group">
+				<button class="btn">登入</button>
+				<button class="btn">取消</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
