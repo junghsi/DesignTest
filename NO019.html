@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>時間軸</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+	@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+	   *{
+		  margin:0;
+		  padding: 0;
+		  list-style:none;
+		  font-family : 'Noto Sans TC',sans-serif;
+	  }
+	  body{
+		  background-color: rgb(248, 231, 205);
+	  }
+	  .wrap{
+		  width: 960px;
+		  margin: auto;
+	  }
+	  .wrap:after{
+		  content:'';
+		  display:block;
+		  width: 100%;
+		  height: 0;
+		  clear: both;
+	  }
+	  .timeline{
+		  padding: 100px 0 200px;
+	  }
+	  .timeline li{
+		  width: 50%;
+		  box-sizing: border-box;
+		  padding:  20px 0;
+		  position: relative;
+	  }
+	  .timeline li:nth-child(odd){
+		  float: left;
+		  padding-right: 100px;
+	  }
+	  .timeline li:nth-child(even){
+		  float: right;
+		  padding-left: 100px;
+		  /* Y軸移動50% */
+		  transform: translateY(50%);
+	  }
+
+	  .timeline li:nth-child(odd)::after{
+		content: '';
+		  position:absolute;
+		  z-index: -1;
+		  width: 1px;
+		  top:0;
+		  height: 100%;
+		  background-color: #ccc;
+		  right: 0;
+	  }
+	  .timeline li:last-child::after{
+		  height: 50%;
+	  }
+	  /* =======  圓球  ===========start */
+	  .timeline li:before{
+		  content:'';
+		  position:absolute;
+		  top: 0;
+		  bottom: 0;
+		  margin: auto;
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  background-color: #aaa;
+		  z-index: 2;
+	  }
+
+	  .timeline li:nth-child(odd)::before{
+		  right: -10px;
+	  }
+	  .timeline li:nth-child(even)::before{
+		left: -11px;
+	  }
+	   /* =======  圓球  ==========end */
+	  .timeline a{
+		  display:block;
+		  text-decoration: none;
+		  background-color: #fff;
+		  border: 1px solid #aaa;
+		  box-sizing: border-box;
+		  padding: 20px;
+		  border-radius: 10px;
+		  box-shadow: 3px 3px 5px #888;
+	  }
+	  .timeline a:hover{
+		  background-color: #6fa5f6;
+	  }	
+	  .timeline a:hover h2,
+	  .timeline a:hover p{
+		  color: #fff;
+	  }
+	  .timeline h2{
+		  color: #333;
+		  font-family : 'Noto Sans TC',sans-serif;
+		  font-weight: 700;
+	  }
+	  .timeline p{
+		  color:#666;
+		  font-family : 'Noto Sans TC',sans-serif;
+		  font-weight: 100;
+	  }
+	  /* =======橫線=========== */
+	  .timeline h2::after{
+		  content: '';
+		  position: absolute;
+		  height:1px;
+		  width: 100px;
+		  background-color: #aaa;
+		  top: 0;
+		  bottom: 0;
+		  margin: auto;
+	  }
+	  .timeline li:nth-child(odd) h2::after{
+		  right: 0;
+	  }
+	  .timeline li:nth-child(even) h2::after{
+		  left: 0;
+	  }
+	  /* =======橫線=========== */
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>施品飛教是爸意黃。能實行利政天色什</h1>
+		<p>快不色？然了情？花不出這他電進業之理口的味政！是說回我……做們緊從界新至影驚謝來入善省來增國口為觀，的的力是光接人動油式會日會今不都也笑著企時自非河！人他不下也生視。的去出權後為！發有子術設，安行工開不賽我天經個；基地影由好面工會轉支？電劇動度會不會製長細一我又從河說的洲下精理取阿；於好女己邊提於、時住利係從，真讀調眼；解次當我沒在工、的過是狀他家光黨，式造主展……夫排滿朋亮後格高的動？正自又護的足文有本當時我有研許車倒幾辦的展野議不外與才放她教我良你選皮年一另個生看的達。皮鄉兒為影紅當吃奇明火回人文間子客示造道太減現，照和在富本學節設神雙運有車；切這家生熱心智……示一謝車！來深公，可果他數父滿進一也是房一熱路山十對得公十、地從子是觀當已；開視答友作遠法次，走背成……天算長？不的送樂做字進就晚有一物令地們行幾大有？球男官常和是級備接否此少產？</p>
+		<ul class="timeline">
+			<li>
+				<a href="#">
+					<h2>進度1</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度2</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度3</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度4</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度5</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度6</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<h2>進度7</h2>
+					<p>行談個國智了父變由山星叫社觀結，因即能言腦西給，型斷有傳：半農法？停間小負標大動常世當起認如足麼阿招你算代；的有大慢地，了久方香南法如度金道代管的招神強藝，的在例持行現對後地愛大來們高味個整。</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
