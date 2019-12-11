@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>多層次收合式側邊選單NO015切版</title>
+
+	<style type="text/css">
+		@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+		@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			background-color: #546377;
+		}
+
+		.side-menu {
+			position: relative;
+			width: 300px;
+			height: 100%;
+			padding: 50px 0;
+			/*防止上下卷動 */
+			box-sizing: border-box;			
+			background-image: linear-gradient(0deg, #3381b0, #c2196c);
+			display: flex;
+			flex-direction: column;
+			/*陰影*/
+			box-shadow: 5px 0px 10px hsla(240, 40%, 10%, .6);			
+			/*一開始的收合表單*/
+			transform: translateX(-100%);
+			/*動畫時間*/
+			transition: .3s;
+		}
+		#side-menu-switch{
+			position: absolute;
+			opacity: 0;
+			z-index: -1;
+		}
+		#side-menu-switch:checked + .side-menu{
+			transform: translateX(0);
+		}
+		/*將箭頭反向，選取時*/
+		#side-menu-switch:checked + .side-menu label .fa-angle-right{
+			transform: scaleX(-1);
+		}
+		.side-menu form {
+			display: flex;
+			margin: 0 10px 50px;
+			border: 1px solid #fff;
+			border-radius: 100px;
+			border: 1px solid rgb(255, 255, 255, .4);
+
+		}
+
+		/*原
+		.side-menu form input{
+			border:none;
+			background-color: transparent;
+			color: #fff;
+			padding: 5px 10px;
+			width: 230px;
+		}
+		.side-menu form button{
+			border:none;
+			background-color: transparent;
+			color: #fff;
+			padding: 5px 10px;
+			width: 50px;
+		}
+		*/
+
+		/*========= 整合後 =========*/
+		.side-menu form input,
+		.side-menu form button {
+			border: none;
+			background-color: transparent;
+			color: #fff;
+			padding: 5px 10px;
+		}
+
+		.side-menu form input {
+			width: 230px;
+		}
+
+		.side-menu form button {
+			width: 50px;
+		}
+
+		/*========= 整合後 =========*/
+		.side-menu form input:focus,
+		.side-menu form button:focus {
+			outline: none;
+		}
+		.side-menu label{
+			position: absolute;
+			width: 40px;
+			height: 80px;
+			background-color: #000;
+			color: #fff;
+			right: -40px;
+			top:0;
+			bottom: 0;
+			margin: auto;
+			line-height: 80px;
+			text-align: center;
+			font-size: 30px;
+			border-radius: 0 10px 10px 0;
+		}
+		.nav a {
+			display: block;
+			padding: 10px;
+			color: #fff;
+			text-decoration: none;
+			/*刪底連結線 */
+			position: relative;
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		.nav li{
+			/*相對定位*/
+			position: relative;
+		}
+		.nav li + li a::before {
+			content: '';
+			position: absolute;
+			border-top: 1px solid rgb(255, 255, 255, .4);
+			left: 10px;
+			right: 10px;
+			top: 0;
+		}
+
+		.nav a .fa {
+			margin-right: -1.1em;
+			transform: scale(0);
+		}
+
+		.nav li:hover .fa {
+			margin-right: 0em;
+			transform: scale(1);
+		}
+		/* 設定摸到換色 >限制下一層改變 */
+		.nav li:hover >a{
+			background-color: rgba(0,0,0,.6);
+		}
+		.nav ul{
+			display: none;
+			/*絕對定位*/
+			position: absolute;
+			left: 100%;
+			width: 300px;
+			/*建議對上偏移*/
+			top:6px;
+			background-color:rgba(255,255,255,.2);
+			/*陰影*/
+			box-shadow: 5px 5px 10px hsla(240, 40%, 10%, .6);
+		}
+		.nav li:hover > ul{
+			/*上面的 display:none 隱藏 下面讓display:block讓他出現*/
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="checkbox" name="" id="side-menu-switch">
+
+	<div class="side-menu">
+		<form>
+			<input type="search" placeholder="請輸入關鍵字">
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<ul class="nav">
+			<li>
+				<a href="#">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					鐵人賽
+				</a>
+				<ul>
+					<li>
+						<a href="#">政政求亮很安定它取能食養</a>
+						<ul>
+							<li><a href="#">DAY1</a></li>
+							<li><a href="#">DAY2</a></li>
+							<li><a href="#">DAY3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">子人了道根和不有下現話亮</a>
+						<ul>
+								<li><a href="#">DAY1</a></li>
+								<li><a href="#">DAY2</a></li>
+								<li><a href="#">DAY3</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#">山現告風她就所長</a>
+						<ul>
+								<li><a href="#">DAY1</a></li>
+								<li><a href="#">DAY2</a></li>
+								<li><a href="#">DAY3</a></li>
+							</ul>
+					</li>
+					<li>
+						<a href="#">率場使金如一觀老活便</a>
+						<ul>
+								<li><a href="#">DAY1</a></li>
+								<li><a href="#">DAY2</a></li>
+								<li><a href="#">DAY3</a></li>
+							</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-gavel" aria-hidden="true"></i>
+					暴力班
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-object-group" aria-hidden="true"></i>
+					RWD 醬子
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-globe" aria-hidden="true"></i>
+					金魚網頁
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-cutlery" aria-hidden="true"></i>
+					金魚切版
+				</a>
+			</li>
+
+		</ul>
+		<label for="side-menu-switch">
+			<i class="fa fa-angle-right"></i>
+		</label>
+	</div>
+</body>
+
+</html>

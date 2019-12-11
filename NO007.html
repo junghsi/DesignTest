@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+		@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+		*{
+			margin:0;
+			padding:0;
+			list-style: none;
+			font-family:'Noto Sans TC',sans-serif;
+		}
+		.main-header{
+			background:linear-gradient(0deg,#f0cce6,#f84a84);
+		}
+		.main-header .container{
+			display: flex;
+			align-items:center;  /* 垂直置中 */
+			padding: 20px;
+			max-width: 1200px;
+			margin: auto;
+
+		}
+		.main-header .log{
+			width: 100px;
+		}
+		.main-header .logo img{
+			width: 100%;
+			vertical-align: middle;
+		}
+		.main-header .main-nav{
+			display:flex;
+			margin:auto;
+
+		}
+		.main-header .main-nav a{
+			text-decoration: none;
+			color:#fff;
+			padding: 5px 1em;
+			position: relative;
+			transform: translateY(0px);
+			transition: .3s;
+		}
+		.main-header .main-nav a:hover{
+			transform: translateY(-10px);
+		}
+		.main-header .main-nav a:after{
+			content:'';
+			position: absolute;
+			left: 50%;
+			right: 50%;
+			bottom: -5px;
+			height: 0;
+			border-bottom: 1px solid #fff;
+			transition: .3s;
+		}
+		.main-header .main-nav a:hover:after{
+			left: 0;
+			right: 0;
+		}
+		
+		.main-header .header-search button,
+		.main-header .header-search input{
+			border: none;
+			background-color: #fff;
+			padding: 5px 10px;
+		}
+		.main-header .header-search button:focus,
+		.main-header .header-search input:focus{
+			outline:none;
+		}
+		.main-header .header-search button{
+			border-radius: 0px 200px 200px 0;
+		}
+		.main-header .header-search input{
+			border-radius: 200px 0 0 200px;
+		}
+	</style>
+</head>
+<body>
+	<header class="main-header">		
+		<div class="container">
+			<a href="#" class="logo">
+				<img src="logo.png" alt="css coke | css">
+			</a>
+			<nav class="main-nav">
+				<a href="#">金魚都能懂系列</a>
+				<a href="#">暴力網頁入門系列</a>
+				<a href="#">CSS可樂系列</a>
+				<a href="#">RWD原來</a>
+			</nav>
+			<form action="" class="header-search">
+				<input type="search" name="" id="">
+				<button><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</header>
+</body>
+</html>

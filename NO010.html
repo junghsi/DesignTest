@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap" rel="stylesheet">
+	font-family:'Noto Sans TC',sans-serif;
+	<title>Document</title>
+	
+	<style type="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+	  *{
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		  font-family:'Noto Sans TC',sans-serif;
+	  }
+	  body{
+		  background-color: #000000;
+
+	  }
+	  .wrap{
+		  width: 100%;
+		  margin: auto;
+		  overflow: hidden;
+	  }
+	  .item{
+		  float: left;
+		  position:relative;
+	  }
+	  .item img{
+		width: 100%;
+		  vertical-align: middle;
+	  }
+	  .item:first-child{
+		  width: 50%;
+	  }
+	  .item:first-child ~.item{
+		  width: 25%;
+	  }
+	  .item .txt{
+		  position: absolute;
+		  top:0;
+		  left: 0;
+		  width: 100%;
+		  height:100%;
+		  padding: 15px;
+		  box-sizing: border-box;
+		  text-align: center;
+		  color: #fff;
+		  background-color: rgba(0,0,0,.6);
+		  /* display: flex; */
+		  /* display: none; */
+		  display: flex;
+		  opacity: 0;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  transition: .9s;
+		  transform: scale(0);
+	  }
+	  .item:hover .txt{
+		  /* display: flex; */
+		  opacity: 1;  /*搭配transition*/
+		  transform: scale(1);  /*搭配transform: scale(0) */
+	  }
+	  .item H3{
+		  margin-bottom: .4em;
+	  }
+	  .item p{
+		font-weight: 100;
+		line-height: 1.7;
+	  }
+	</style>
+</head>
+<body>
+	<div class="wrp">
+		<div class="item">
+			<img src=https://picsum.photos/500/500?random=10" >
+			<div class="txt">
+				<h3>則特現結演小都今是一養</h3>
+				<p>化花國記是，看他和在向原工福每可本母分得夜品都性體界氣政花食會本共五是想走機研給五製
+					我他告何的分來主。更引天不所經效……山門相著再世臺</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src=https://picsum.photos/500/500?random=20" >
+			<div class="txt">
+				<h3>率不主我康有神可而然些</h3>
+				<p>無策嗎不童但量力告長、意界第備半程歷物一用歷……別中友科看更的年總馬新著生主場領度言
+					重這裡間起畫。生長全火；一明的單個合線素農值……來家遠，輪特在物？獨業達星是，</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src=https://picsum.photos/500/500?random=30" >
+			<div class="txt">
+				<h3>語父城的水兒意小</h3>
+				<p>對子化領日色臺作屋老國家美，還的度福客停個影未我心起單！學少育課團他有苦連模加持因容
+					選下改好商習公出、理境命作：車高一法但？業病示可？上親易馬因不她務</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src=https://picsum.photos/500/500?random=40" >
+			<div class="txt">
+				<h3>好大裡每算以</h3>
+				<p>人話節正：阿黨工子選發靈飛回把覺有希說筆！人廠什，大者智直禮直型，家的業體行痛未火；
+					精大而怎不然麼大助。</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src=https://picsum.photos/500/500?random=50" >
+			<div class="txt">
+				<h3>多處高奇依入意生童寶水滿</h3>
+				<p>的又麗？南一然們共日時人臺建動在心一組見來更問對難部原代個四通當氣求至維上許好了言
+					心帶頭麼完，生親等構地力何行父容條國。家外視！走錢演！有了導好怎力新但東洲望是一</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
