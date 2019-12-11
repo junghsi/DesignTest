@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>訊息對話紀錄</title>
+	<style type="text/css">
+	  @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:100,300,400,500,700,900&display=swap");
+	  @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+	   *{
+		  margin:0;
+		  padding: 0;
+		  list-style:none;
+		  
+	  }
+	  html,body{
+		  height: 100%;
+	  }
+	  body{
+		  display: flex;
+		  align-items: center;
+		  background-color: #F323;;
+	  }
+	  .dialogue{
+		  width: 500px;
+		  padding: 20px;
+		  box-shadow: 0 0 10px #3e92cc;
+		  background-color: #f4f7fa;
+	  }
+	  .user{
+		  display:flex;
+		  align-items: flex-start;
+		  margin-bottom: 20px;
+		  font-family : 'Noto Sans TC',sans-serif;
+	  }
+	  .local{
+		  justify-content: flex-end;
+	  }
+	  .user .avatar{
+		  width: 60px;
+		  text-align: center;
+		  flex-shrink: 0;
+	  }
+	  .user .pic{
+		  border-radius: 50%;
+		  overflow: hidden;
+	  }
+	  .user .pic img{
+		  width: 100%;
+		  vertical-align: middle;
+	  }
+	  .user .txt{
+		  background-color: #aaa;
+		  padding: 16px;
+		  border-radius: 10px;
+		  position: relative;
+	  }
+	  .remote .txt{
+		  margin-left: 20px;
+		  margin-right: 80px;
+		  background-color: #fff;
+	  }
+	  .local .txt{
+		  margin-right: 20px;
+		  margin-left: 80px;
+		  order: -1;
+		  background-color: #3e92cc;
+		  color: #fff;
+	  }
+	  .remote .txt::before,
+	  .local .txt::before{
+		  content: '';
+		  position: absolute;
+		  top:10px;
+		  border-top: 20px solid transparent;
+		  border-bottom: 20px solid transparent;
+	  }
+	  .remote .txt::before{
+		  border-right: 10px solid #fff;
+		  left: -10px;
+
+	  }
+	  .local .txt::before{
+		  border-left: 10px solid #3e92cc;
+		  right: -10px;
+	  }
+	</style>
+</head>
+<body>
+	
+	<div class="dialogue">
+		<div class="user remote">
+			<div class="avatar">
+				<div class="pic">
+					<img src="https://picsum.photos/100/100">
+				</div>
+				<div class="name">Alvee</div>
+			</div>
+			<div class="txt">
+				測試對話1
+			</div>
+			
+		</div>
+		<div class="user local">
+			<div class="avatar">
+				<div class="pic">
+					<img src=https://picsum.photos/100/100?random=2" >
+				</div>
+				<div class="name">Amos</div>
+			</div>
+				<div class="txt">
+						心文準是心……光的身的將民文日
+				</div>			
+		</div>
+		<div class="user remote">
+				<div class="avatar">
+					<div class="pic">
+						<img src="https://picsum.photos/100/100">
+					</div>
+					<div class="name">Alvee</div>
+				</div>
+				<div class="txt">
+					測試對話2
+				</div>
+				
+			</div>
+			<div class="user local">
+				<div class="avatar">
+					<div class="pic">
+						<img src=https://picsum.photos/100/100?random=2" >
+					</div>
+					<div class="name">Amos</div>
+				</div>
+					<div class="txt">
+							兩受心馬師任；大以他接電而光圖面，流沒代的視會海決國一麼！且照車為對然高友團裡氣園行廣種資市立斷得，樂打事況說他時。
+					</div>			
+			</div>					
+	</div>
+
+
+
+</body>
+</html>
