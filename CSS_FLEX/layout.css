@@ -1,0 +1,36 @@
+.frame{
+	display: flex;  /*讓下一項項目水平排列*/
+}
+.left{
+	background-color: red;
+	flex:none; /*固定配置	*/
+	width: 200px;
+}
+.right{
+	display: flex;  /*讓下一項目水平排列*/
+	justify-content: flex-end; /*水平對齊靠右*/
+	background-color: blue;
+	flex: auto; /* 自動把剩的空間填滿 */
+	/* width: 50%; */
+}
+.item{
+	background-color: #ccc;
+	flex:none;
+	width: 100px;
+	margin-right:10px;
+	text-align: center;
+}
+.welcome{
+	display: flex;
+	justify-content: center;
+	align-items: center;  /* 垂直置中*/
+	height: 300px;
+	background-color: #cccccc;
+}
+.text{
+	width: 300px;
+	height: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}

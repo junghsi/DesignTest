@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+	<style>
+		.social-icons {
+			display:flex;
+			justify-content: center;
+			gap:25px
+		}
+		.icon{
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+		p{
+			color:white;
+			font-family: sans-serif;
+			padding: 20px 20px 0 20px;
+		}
+		h3{
+			color:white;
+			font-family: sans-serif;
+		}
+		.myphoto{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-top: 20px;
+		}
+		.left{
+			flex:2;
+			height: 100%;
+			background-color: rgb(24,105,172);
+			border-radius: 5px 0 0 5px;
+			border-right: 1px solid rgb(175,175,175);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		.right{
+			flex:3;
+			height: 100%;
+			background-color: rgb(9,50,106);
+			border-radius: 0 5px 5px 0;
+		}
+		.card{
+			width: 400px;
+			height: 200px;
+			margin-left: 20px;
+			margin-top: 20px;
+			display:flex;
+			/* 預設值就是row */
+			flex-direction: row;
+			box-shadow: 5px 5px 5px gray;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="left">
+			<img src="https://picsum.photos/300/200?random=10" alt="" class="myphoto">
+			<h3>野原新之助</h3>
+		</div>
+		<div class="right">
+			<p>分公司情人獲取著名毫無新，公共詳細訊息，貸款圖片供應商，以下擴大。</p>
+			<div class="social-icons">
+				<img src="https://picsum.photos/300/200?random=40" alt="" class="icon">
+				<img src="https://picsum.photos/300/200?random=20" alt="" class="icon">
+				<img src="https://picsum.photos/300/200?random=30" alt="" class="icon">
+
+			</div>
+		</div>
+	</div>
+		<span class="material-symbols-outlined">search</span>
+		<span class="material-symbols-outlined">home</span>
+		<span class="material-symbols-outlined">settings</span>
+		<span class="material-symbols-outlined">favorite</span>
+</body>
+</html>
